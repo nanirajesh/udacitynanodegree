@@ -1,0 +1,93 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nano Degree Apps"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/spotify"
+        android:layout_above="@+id/score"
+        android:layout_alignLeft="@+id/xyzreader"
+        android:layout_alignStart="@+id/xyzreader"
+        android:layout_alignRight="@+id/xyzreader"
+        android:layout_alignEnd="@+id/xyzreader"
+        android:background="#F08C35"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score App"
+        android:id="@+id/score"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/library"
+        android:layout_alignRight="@+id/spotify"
+        android:layout_alignEnd="@+id/spotify"
+        android:layout_alignLeft="@+id/xyzreader"
+        android:layout_alignStart="@+id/xyzreader"
+        android:background="#F08C35"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Library App"
+        android:id="@+id/library"
+        android:layout_above="@+id/buildit"
+        android:layout_alignRight="@+id/score"
+        android:layout_alignEnd="@+id/score"
+        android:layout_alignLeft="@+id/xyzreader"
+        android:layout_alignStart="@+id/xyzreader"
+        android:background="#F08C35"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buildit"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/library"
+        android:layout_alignEnd="@+id/library"
+        android:layout_alignLeft="@+id/xyzreader"
+        android:layout_alignStart="@+id/xyzreader"
+        android:background="#F08C35"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/xyzreader"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/buildit"
+        android:layout_alignRight="@+id/capstone"
+        android:layout_alignEnd="@+id/capstone"
+        android:layout_alignLeft="@+id/capstone"
+        android:layout_alignStart="@+id/capstone"
+        android:background="#F08C35"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone:My Own App"
+        android:layout_marginTop="10dp"
+        android:id="@+id/capstone"
+        android:layout_below="@+id/xyzreader"
+        android:layout_centerHorizontal="true"
+        android:background="#FF3F80"/>
+</RelativeLayout>
